@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: messaging-service
+  # This is an extra long description
+  description: The messaging service is used for better event driven microservice architecture.
+  links:
+    - url: https://github.com/swagger-api/swagger-petstore
+      title: GitHub Repo
+      icon: github
+spec:
+  type: service
+  lifecycle: production
+  owner: team-messaging (Stefan)
+  providesApis:
+    - publishMessage
+    - subscribeMessage
